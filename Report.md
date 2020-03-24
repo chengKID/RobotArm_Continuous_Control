@@ -83,25 +83,25 @@ But these results were not great with the project's reacher environment. So I tr
 The final version of my DDPG agent uses the following parameters values (These parameters are passed in the main training function `ddpg()` defined and called in the notebook.)
 
 ```
-state_size = 33         # environment State size 
-action_size = 4         # environment Action size 
-BUFFER_SIZE = int(1e6)  # replay buffer size
-BATCH_SIZE = 128        # minibatch size
+state_size = 33         		# environment State size 
+action_size = 4         		# environment Action size 
+BUFFER_SIZE = int(1e6) 			# replay buffer size
+BATCH_SIZE = 128       	     		# minibatch size
 
-GAMMA = 0.99                  # discount factor
-TAU = 1e-3                    # for soft update of target parameters
+GAMMA = 0.99                 		# discount factor
+TAU = 1e-3                    		# for soft update of target parameters
 
-LR_ACTOR = 2e-4               # learning rate of the actor 
-LR_CRITIC = 2e-4              # learning rate of the critic
-WEIGHT_DECAY = 0              # L2 weight decay
-actor_fc1_units = 128         # Number of units for the layer 1 in the actor model
-actor_fc1_units = 128         # Number of units for the layer 2 in the actor model
-critic_fcs1_units = 128       # Number of units for the layer 1 in the critic model
-critic_fc2_units = 128        # Number of units for the layer 2 in the critic model
+LR_ACTOR = 2e-4               		# learning rate of the actor 
+LR_CRITIC = 2e-4              		# learning rate of the critic
+WEIGHT_DECAY = 0              		# L2 weight decay
+actor_fc1_units = 128         		# Number of units for the layer 1 in the actor model
+actor_fc1_units = 128         		# Number of units for the layer 2 in the actor model
+critic_fcs1_units = 128       		# Number of units for the layer 1 in the critic model
+critic_fc2_units = 128        		# Number of units for the layer 2 in the critic model
 
-mu = 0.                       # Ornstein-Uhlenbeck noise parameter
-theta = 0.15                  # Ornstein-Uhlenbeck noise parameter
-sigma = 0.2                   # Ornstein-Uhlenbeck noise parameter
+mu = 0.                       		# Ornstein-Uhlenbeck noise parameter
+theta = 0.15                  		# Ornstein-Uhlenbeck noise parameter
+sigma = 0.2                   		# Ornstein-Uhlenbeck noise parameter
 ```
 
 The **Actor Neural Networks** use the following architecture :
