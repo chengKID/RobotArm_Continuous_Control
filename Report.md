@@ -14,7 +14,7 @@ For this project, can be done with two separate versions of the Unity environmen
 - The first version contains a single agent.
 - The second version contains 20 identical agents.
 
-**In my implementation I have chosen to solve the First version of the environment (Single Agent) using the off-policy DDPG algorithm.** The task is episodic, and **in order to solve the environment, the agent must get an average score of +30 over 100 consecutive episodes.**
+In my implementation I have chosen to solve the First version of the environment (Single Agent) using the off-policy DDPG algorithm.** The task is episodic, and **in order to solve the environment, the agent must get an average score of +30 over 100 consecutive episodes.
 
 
 ## Agent Implementation
